@@ -30,7 +30,8 @@ function App() {
       setcepUser(response.data);
       Keyboard.dismiss();
     } catch (error) {
-      console.log('ERRO' + error);
+      alert('Digite um cep valido');
+      setCep('');
     }
   }
 
